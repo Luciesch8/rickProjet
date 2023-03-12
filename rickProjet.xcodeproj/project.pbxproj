@@ -16,6 +16,12 @@
 		99CD4C3528E591A100BDFA48 /* rickProjetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD4C3428E591A100BDFA48 /* rickProjetTests.swift */; };
 		99CD4C3F28E591A100BDFA48 /* rickProjetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD4C3E28E591A100BDFA48 /* rickProjetUITests.swift */; };
 		99CD4C4128E591A100BDFA48 /* rickProjetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD4C4028E591A100BDFA48 /* rickProjetUITestsLaunchTests.swift */; };
+		99CD4C4F28E5CAB600BDFA48 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 99CD4C4E28E5CAB600BDFA48 /* Alamofire */; };
+		99CD4C5228E5CB0100BDFA48 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 99CD4C5128E5CB0100BDFA48 /* PromiseKit */; };
+		99CD4C5528E5CB1A00BDFA48 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 99CD4C5428E5CB1A00BDFA48 /* SwiftyJSON */; };
+		99CD4C5728E5CDBF00BDFA48 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD4C5628E5CDBF00BDFA48 /* RandomView.swift */; };
+		99CD4C5928E5D43200BDFA48 /* BeerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD4C5828E5D43200BDFA48 /* BeerApi.swift */; };
+		99CD4C5C28E5D51200BDFA48 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD4C5B28E5D51200BDFA48 /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		99CD4C3A28E591A100BDFA48 /* rickProjetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rickProjetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CD4C3E28E591A100BDFA48 /* rickProjetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rickProjetUITests.swift; sourceTree = "<group>"; };
 		99CD4C4028E591A100BDFA48 /* rickProjetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rickProjetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99CD4C5628E5CDBF00BDFA48 /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
+		99CD4C5828E5D43200BDFA48 /* BeerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerApi.swift; sourceTree = "<group>"; };
+		99CD4C5B28E5D51200BDFA48 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CD4C5528E5CB1A00BDFA48 /* SwiftyJSON in Frameworks */,
+				99CD4C4F28E5CAB600BDFA48 /* Alamofire in Frameworks */,
+				99CD4C5228E5CB0100BDFA48 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,10 @@
 		99CD4C1C28E591A000BDFA48 /* rickProjet */ = {
 			isa = PBXGroup;
 			children = (
+				99EA1D1E28E6E0F000092ABC /* view */,
+				99CD4C5E28E5D52900BDFA48 /* api */,
+				99CD4C5D28E5D51800BDFA48 /* controller */,
+				99CD4C5A28E5D4FE00BDFA48 /* model */,
 				99CD4C1D28E591A000BDFA48 /* AppDelegate.swift */,
 				99CD4C1F28E591A000BDFA48 /* SceneDelegate.swift */,
 				99CD4C2128E591A000BDFA48 /* ViewController.swift */,
@@ -127,6 +143,37 @@
 			path = rickProjetUITests;
 			sourceTree = "<group>";
 		};
+		99CD4C5A28E5D4FE00BDFA48 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				99CD4C5B28E5D51200BDFA48 /* Beer.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		99CD4C5D28E5D51800BDFA48 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				99CD4C5628E5CDBF00BDFA48 /* RandomView.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		99CD4C5E28E5D52900BDFA48 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				99CD4C5828E5D43200BDFA48 /* BeerApi.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		99EA1D1E28E6E0F000092ABC /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +190,11 @@
 			dependencies = (
 			);
 			name = rickProjet;
+			packageProductDependencies = (
+				99CD4C4E28E5CAB600BDFA48 /* Alamofire */,
+				99CD4C5128E5CB0100BDFA48 /* PromiseKit */,
+				99CD4C5428E5CB1A00BDFA48 /* SwiftyJSON */,
+			);
 			productName = rickProjet;
 			productReference = 99CD4C1A28E591A000BDFA48 /* rickProjet.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +267,11 @@
 				Base,
 			);
 			mainGroup = 99CD4C1128E591A000BDFA48;
+			packageReferences = (
+				99CD4C4D28E5CAB600BDFA48 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				99CD4C5028E5CB0100BDFA48 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				99CD4C5328E5CB1A00BDFA48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 99CD4C1B28E591A000BDFA48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99CD4C5928E5D43200BDFA48 /* BeerApi.swift in Sources */,
+				99CD4C5C28E5D51200BDFA48 /* Beer.swift in Sources */,
 				99CD4C2228E591A000BDFA48 /* ViewController.swift in Sources */,
 				99CD4C1E28E591A000BDFA48 /* AppDelegate.swift in Sources */,
 				99CD4C2028E591A000BDFA48 /* SceneDelegate.swift in Sources */,
+				99CD4C5728E5CDBF00BDFA48 /* RandomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +656,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99CD4C4D28E5CAB600BDFA48 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		99CD4C5028E5CB0100BDFA48 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		99CD4C5328E5CB1A00BDFA48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99CD4C4E28E5CAB600BDFA48 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99CD4C4D28E5CAB600BDFA48 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		99CD4C5128E5CB0100BDFA48 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99CD4C5028E5CB0100BDFA48 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		99CD4C5428E5CB1A00BDFA48 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99CD4C5328E5CB1A00BDFA48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99CD4C1228E591A000BDFA48 /* Project object */;
 }

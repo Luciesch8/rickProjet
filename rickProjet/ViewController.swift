@@ -20,12 +20,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        button.setTitle("press me", for: .normal)
-        nom.text = "coucou"
+        //button.setTitle("press me", for: .normal)
+        nom.text = "Beer"
     }
 
 
-    @IBAction func buttonAction(_ sender: Any) {
+   /* @IBAction func buttonAction(_ sender: Any) {
         let valeur = Int.random(in: 0...100)%2
         
         if valeur % 2 == 1 {
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             image.image = UIImage(named: "\(valeur).png")
         }
         
-    }
+    }*/
     
     
 }
